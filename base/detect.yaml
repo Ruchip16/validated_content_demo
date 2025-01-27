@@ -1,0 +1,21 @@
+---
+- hosts: all
+  gather_facts: true
+  tasks:
+    - name: Detect Network Diff
+      ansible.builtin.include_role:
+        name: network.ospf.detect
+      vars:
+        resources:
+          - 'ospfv2'
+          - 'ospfv3'
+          - 'ospf_interfaces'
+        data_store:
+          scm:
+            parent_directory: "/home/rhel"
+            origin:
+              url: "https://github.com/Ruchip16/validated_content_demo.git"
+              token: "{{ token }}"
+              user:
+                name: Ruchip16
+                email: ruchipakhle@gmail.com

@@ -20,10 +20,10 @@
             scm:
               parent_directory: "/home/rhel"
               origin:
-                url: https://github.com/rohitthakur2590/network_automation_demo.git
-                token: "{{ Ttoken }}"
+                url: https://github.com/Ruchip16/validated_content_demo.git
+                token: "{{ token }}"
                 tag:
                   annotation: "demo-tag_{{ time }}_{{ num }}"
                   message: "backup_config"
                 user:
-                  name: rohitthakur2590
+                  name: Ruchip16

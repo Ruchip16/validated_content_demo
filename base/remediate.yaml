@@ -1,0 +1,11 @@
+---
+- name: Remediate configuration drift from local data store
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Invoke remediate role
+      ansible.builtin.include_role:
+        name: network.ospf.remediate
+      vars:
+        data_store:
+          local: "~/data/network"
