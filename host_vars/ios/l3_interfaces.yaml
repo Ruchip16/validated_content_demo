@@ -1,0 +1,13 @@
+l3_interfaces:
+-   ipv4:
+    -   dhcp:
+            enable: true
+    name: GigabitEthernet1
+-   name: GigabitEthernet2
+-   name: GigabitEthernet3
+-   name: GigabitEthernet4
+-   name: Loopback23
+-   name: Loopback234
+-   name: Loopback32
+-   name: Loopback40
+-   name: Loopback89
