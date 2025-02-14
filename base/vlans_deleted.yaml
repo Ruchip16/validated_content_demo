@@ -3,8 +3,8 @@
   hosts: all
   gather_facts: no
   tasks:
-    - name: Gather configuration.
+    - name: Delete configuration.
       cisco.ios.ios_vlans:
         config:
-          vlan_id: 1337
+          - vlan_id: 1337
         state: deleted
